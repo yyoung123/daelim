@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/ScrollMagic.min.js"></script>
+    <script src="../js/animation.gsap.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <title>대림바스</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <div class="gnb">
+          <div class="gnb_inner">
+            <div class="info left">
+              <a href="../images/main/2-2.jpg" class="logo_1" download="2-2.jpg">
+                <img src="../images/layout/h_logo.png" alt="" />
+              </a>
+            </div>
+            <nav class="menu center">
+              <ul class="">
+                <li class="menudepth">
+                  <a href="" class="menuitem">바스</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">브랜드</a></li>
+                            <li class=""><a href="">대림바스 </a></li>
+                            <li class=""><a href="">FÜLEN </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">기술력</a></li>
+                            <li class=""><a href="">자동물내림 일체형비데 </a></li>
+                            <li class=""><a href="">위생도기 기술력 </a></li>
+                            <li class=""><a href="">수전 기술력 </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">랜드마크</a></li>
+                            <li class=""><a href="">대림바스 </a></li>
+                            <li class=""><a href="">FÜLEN </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menudepth">
+                  <a href="" class="menuitem">리모델링</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">대림바스<span>&</span>키친</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">리모델링</a></li>
+                            <li class=""><a href="">욕실 리모델링 </a></li>
+                            <li class=""><a href="">주방 리모델링 </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menudepth"><a href="" class="menuitem">렌탈/케어서비스</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">대림케어</li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">렌탈/케어
+                            </a></li>
+                            <li class=""><a href="">렌탈 서비스
+                            </a></li>
+                            <li class=""><a href="">스마트 욕실케어</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div></li>
+                <li class="menudepth"><a href="" class="menuitem">제품</a>
+                  <div class="submenu_wrap on">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">베스트셀러
+                            </a></li>
+                            <li class=""><a href="">바스
+                            </a></li>
+                            <li class=""><a href="">리모델링</a></li>
+                            <li class=""><a href="">렌탈/케어서비스</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">신제품</li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="hi">
+                            <li class="main_tit"><a href="">제품소개
+                            </a></li>
+                            <li>
+                              <a href="|">일체형 비데</a>
+                            </li>
+                            <li>
+                              <a href="|">양변기</a>
+                            </li>
+                            <li>
+                              <a href="|">세면기</a>
+                            </li>
+                            <li>
+                              <a href="|">액세서리</a>
+                            </li>
+                            <li>
+                              <a href="|">부속/부자재</a>
+                            </li>
+                            <li>
+                              <a href="|">비데/시트</a>
+                            </li>
+                            <li>
+                              <a href="|">소변기</a>
+                            </li>
+                            <li>
+                              <a href="|">수전금구</a>
+                            </li>
+                            <li>
+                              <a href="|">욕실가구</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menudepth"><a href="" class="menuitem">대리점/전시장</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">대리점</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">전시장</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div></li>
+                <li class="menudepth"><a href="" class="menuitem">자료실</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">카탈로그</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">제품 정보 다운로드</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">
+                              인증서/등록증
+                          </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">   브로슈어/리플렛
+                              </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">시공수첩/기타
+                            </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">AS/설치가이드</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menudepth"><a href="" class="menuitem">AS/문의</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">1:1 문의
+                            </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">사업제안</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menudepth"><a href="" class="menuitem">홍보센터</a>
+                  <div class="submenu_wrap">
+                    <div class="submenu_box">
+                      <ul class="submenu_list">
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">공지사항
+                            </a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">IR</a></li>
+                          </ul>
+                        </li>
+                        <li class="sub_tit">
+                          <ul class="">
+                            <li class="main_tit"><a href="">SNS</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="info right">
+              <ul class="log_menu">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">마이페이지</a></li>
+              </ul>
+              <div class="all_menu">
+                <img src="../images/layout/ico_ham.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="wrap" >
+        <section class="section01" id="section01">
+          <div class="swiper-container main-slide">
+            <!-- 보여지는 영역 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-contents page">
+                  <div class="txt-wrap ">
+                    <span class="sub_tit">Since. 1966</span>
+                    <span class="main_tit">100년을 향한 58번째 도약</span>
+                    <span class="main_cont">반세기 역사.<br>욕실을 넘어 물과 손이 닿는 모든 곳으로<br>프리미엄의 명성을 이어나가고 있습니다.</span>
+                  </div>
+                </div>
+                <img src="../images/main/202208121159343042.jpg" alt="" class="dis-700" />
+                <img src="../images/main/m1-1.jpg" class="dis-no vis-700"alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-contents page">
+                  <div class="txt-wrap">
+                    <span class="sub_tit">SMART TECH</span>
+                    <span class="main_tit">환경과 미래 세대를 위한 선택</span>
+                    <span class="main_cont">환경과 미래를 생각하는 첨단 기술<br><br>우리의 실용적이고 미래 지향적인 기술은<br>시대의 흐름에 유연하게 대응하며 진화하고 있습니다.</span>
+                  </div>
+                </div>
+                <img src="../images/main/202210261511181921.jpg" alt="" class="dis-700"/>
+                <img src="../images/main/m1-2.jpg" class="dis-no vis-700"alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-contents page">
+                  <div class="txt-wrap">
+                    <span class="sub_tit">LAND MARK</span>
+                    <span class="main_tit">섬세하게 채워지는 품격의 중심</span>
+                    <span class="main_cont">랜드마크 · 고급 주거 공간의 중심<br><br>최상의 프리미엄 주거 공간, 최고급 호텔의 욕실이<br>대림바스로 채워지고 있습니다.</span>
+                  </div>
+                </div>
+                <img src="../images/main/20220812122122912.jpg" alt="" class="dis-700"/>
+                <img src="../images/main/m1-3.jpg" class="dis-no vis-700"alt="">
+              </div>
+            </div>
+            <div class="slide-nav">
+              <div class="page">
+                <ul>
+                  <li>
+                    <div class="probar"></div>
+                    <span class="main_tit">100년을 향한 58번째 도약</span>
+                    <span class="sub_tit">Since. 1966</span>
+                  </li>
+                  <li>
+                    <div class="probar"></div>
+                    <span class="main_tit">환경과 미래 세대를 위한 선택</span>
+                    <span class="sub_tit">SMART TECH</span>
+                  </li>
+                  <li>
+                    <div class="probar"></div>
+                    <span class="main_tit">섬세하게 채워지는 품격의 중심</span>
+                    <span class="sub_tit">LAND MARK</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section01 end -->
+        <section class="section02" id="section02">
+          <div class="page">
+            <div class="txt_cont img-ani bottom-top">
+              <div class="sub_tit">
+                01
+                <span class="line"></span>
+                대림바스
+              </div>
+              <div class="main_tit">
+                ONE 
+                <span>&</span> ONLY
+              </div>
+              <span class="desc">생활과 품격을 아우르는 가장 독보적인 기술</span>
+            </div>
+          </div>
+          <div class="page bath-slide">
+            <div class="contents-wrap">
+              <ul class="cont-img img-ani bottom-top">
+                <li>
+                  <a href="">
+                    <div class="cont-txt">
+                      <div>
+                        <span class="top_txt">SMARTLET</span>
+                        <span class="bot_txt">
+                          자동물내림 일체형비데
+                        </span>
+                      </div>
+                    </div>
+                    <img src="../images/main/2-1.jpg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="cont-txt">
+                      <div>
+                        <span class="top_txt">DAELIM BATH</span>
+                        <span class="bot_txt">
+                          프리미엄 욕실의 중심
+                        </span>
+                      </div>
+                    </div>
+                    <img src="../images/main/2-2.jpg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="cont-txt">
+                      <div>
+                        <span class="top_txt">HISTORY</span>
+                        <span class="bot_txt">
+                          토탈 홈 인테리어 대림비앤코
+                        </span>
+                      </div>
+                    </div>
+                    <img src="../images/main/2-3.jpg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="cont-txt">
+                      <div>
+                        <span class="top_txt">ECO FRIENDLY</span>
+                        <span class="bot_txt">
+                          물 절약을 위한 초절수 제품
+                        </span>
+                      </div>
+                    </div>
+                    <img src="../images/main/2-4.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section03" id="section03">
+          <div class="page">
+            <div class="txt_cont img-ani bottom-top">
+              <div class="sub_tit">
+                02
+                <span class="line"></span>
+                스마트테크 소개
+              </div>
+              <div class="main_tit">
+                THE BEST SMARTTECH</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="contents-wrap img-ani bottom-top">
+              <div class="cont-txt">
+                <div class="txt_wrap">
+                  <div class="smt_box on">
+                    <span class="sub_tit">Automatic Flushing</span>
+                    <span class="main_tit">
+                      자동 물내림 기능
+                    </span>
+                    <span class="main_cont">
+                      사용자의 손이 닿지 않아도 알맞은 양의 물을<br>
+                      자동으로 내려주는 최고의 편의, 가장 완벽한 기술
+                    </span>
+                  </div>
+                  <div class="smt_box">
+                    <span class="sub_tit">Perfect Flushing Performance</span>
+                    <span class="main_tit">
+                      완벽한 수세력
+                    </span>
+                    <span class="main_cont">
+                      특허로 검증된 4단계 2회 세척법과 볼 세척력 강화 장치로<br>
+                      저수압에서도 기능이 극대화 되는 독보적인 수세 기술
+                    </span>
+                  </div>
+                  <div class="smt_box">
+                    <span class="sub_tit">Rimless Design</span>
+                    <span class="main_tit">
+                      림리스 디자인
+                    </span>
+                    <span class="main_cont">
+                      양변기 가장자리의 테두리를 제거하여 오물과 세균이
+                      <br>쌓이는 모서리 공간까지 집중한 위생 디자인
+                    </span>
+                  </div>
+                  <div class="smt_box">
+                    <span class="sub_tit">Auto Open-Close Lid</span>
+                    <span class="main_tit">
+                      자동 개폐 기능
+                    </span>
+                    <span class="main_cont">
+                      인체 동작을 감지하여 사용자가 손을 대지 않아도
+                      <br>자동으로 여닫히는 오토 센서 제어 기술
+                    </span>
+                  </div>
+                  <div class="smt_box">
+                    <span class="sub_tit">White Cera</span>
+                    <span class="main_tit">
+                      오염 방지 특수 코팅
+                    </span>
+                    <span class="main_cont">
+                      특수 방오 유약을 덧발라 도기 표면 평활도를 높여 변색과 오염에 강하고
+                      <br>오래도록 백색도와 청결함이 유지되는 도기 기술
+                    </span>
+                  </div>
+                  <div class="smt_box">
+                    <span class="sub_tit">Specialized Design For Korean</span>
+                    <span class="main_tit">
+                      한국인 체형 특화 디자인
+                    </span>
+                    <span class="main_cont">
+                      한국인의 평균 체형과 인체 치수를 반영하여
+                      <br>설계한 최적의 편안함을 선사하는 인체공학적 설계
+                    </span>
+                  </div>
+                </div>
+                <div class="line_wrap">
+                  <ul>
+                    <li class="act">
+                      <div class="icon">
+                        <img src="../images/main/smartlet03.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">자동 물내림 기능</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="../images/main/smartlet01.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">완벽한 수세력</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="../images/main/smartlet04.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">림리스 디자인</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="../images/main/smartlet02.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">자동 개폐 기능</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="../images/main/smartlet06.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">오염 방지 특수 코팅</span>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="../images/main/smartlet05.png" alt="">
+                      </div>
+                      <span class="dot"></span>
+                      <span class="main_tit">한국인 체형 특화 디자인</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section045">
+          <div class="page">
+            <div class="txt_cont img-ani bottom-top">
+              <div class="sub_tit">
+                03
+                <span class="line"></span>
+                추천 제품
+              </div>
+              <div class="main_tit">
+                BEST PRODUCT</div>
+              <span class="desc">대림바스의 대표 제품을 소개합니다.</span>  
+            </div>
+          </div>
+        </section>
+        <section class="section04 section045" id="section04">
+          <div class="fix">
+            <div class="sec-cat">
+              <div class="sec-tit">
+                <a href="../images/main/.pdf" target="_blank" class="btn-view">
+                  <span class="btn-effect"></span>
+                  <span class="btn-inner">
+                    <span class="btn-title">카탈로그 더보기
+                    </span>
+                </span>
+                </a>
+              </div>
+              <img src="../images/main/smlet_bg.jpg" alt="">
+            </div>
+          </div>
+          <div class="page">
+            <ul class="smlet_ul" style="position: relative; height: 1695px;">
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8510</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#세면수전</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8410J</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#센서수전</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8510</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#세면수전</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8510</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#세면수전</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8510</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#세면수전</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href=""><img src="../images/main/3-1.jpg" alt="">
+                  <span class="main_tit">DL-L8510</span>
+                </a>
+                <div class="smlet_hash">
+                  <ul id="pro_key">
+                    <li>#세면수전</li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+        <section class="section05" id="section05">
+          <div class="page">
+            <div class="txt img-ani bottom-top" style="height:267px">
+              <span class="txt_ban">LANDMARK</span>
+            </div>
+            <div class="txt_cont img-ani bottom-top">
+              <div class="sub_tit">
+                04
+                <span class="line"></span>
+                포트폴리오 of 대림바스
+              </div>
+              <div class="sec_tit">
+                <div>
+                  <div class="main_tit">
+                    LANDMARK</div>
+                  <span class="desc">격조 높은 공간엔 언제나 대림바스가 있습니다.</span>
+                </div>
+                <a href="" target="" class="btn-view">
+                  <span class="btn-effect"></span>
+                  <span class="btn-inner">
+                    <span class="btn-title">랜드마크 더보기
+                    </span>
+                </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contents-wrap">
+            <div class="cont-txt">
+              <div class="line_wrap img-ani bottom-top">
+                <ul>
+                  <li>
+                    <div>
+                      <span class="land_logo">
+                        <img src="../images/main/theshilla_seoul_logo.png" alt=""></span>
+                      <span class="line_bar"></span>
+                      <div class="main_tit"></div>
+                      <div class="desc"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="land_logo">
+                        <img src="../images/main/fourseason_hotel_logo.png" alt=""></span>
+                      <span class="line_bar"></span>
+                      <div class="main_tit"></div>
+                      <div class="desc"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="land_logo">
+                        <img src="../images/main/hotel_logo08.png" alt=""></span>
+                      <span class="line_bar"></span>
+                      <div class="main_tit"></div>
+                      <div class="desc"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span class="land_logo">
+                        <img src="../images/main/the_plaza_logo.png" alt=""></span>
+                      <span class="line_bar"></span>
+                      <div class="main_tit"></div>
+                      <div class="desc"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <img src="../images/main/5-1.png" alt="" class="on land_img">
+            <img src="../images/main/5-2.jpg" alt="" class="land_img">
+            <img src="../images/main/5-3.jpg" alt="" class="land_img">
+            <img src="../images/main/5-4.jpg" alt="" class="land_img">
+          </div>
+        </section>
+        <section class="section06" id="section06">
+          <div class="txt_cont img-ani bottom-top">
+            <div class="sub_tit">
+              05
+              <span class="line"></span>
+              미디어
+            </div>
+            <div class="main_tit">
+              MEDIA 
+            </div>
+            <span class="desc">대림바스는 매일 새로운 시도와 도전을 꿈꾸고 있습니다.</span>
+          </div>
+          <div class="page">
+            <div class="slidebx img-ani bottom-top">
+              <ul class="magzine_list">
+                <li class="mag_li01 on">
+                  <img src="../images/main/6-1.png" class="mag_img" alt="">
+                  <div>
+                    <span class="sub_tit">MEDIA</span>
+                    <span class="main_tit">둘이 아닌 하나</span>
+                    <div class="playbx">
+                      <a href=""></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mag_li01">
+                  <img src="../images/main/6-2.png" class="mag_img" alt="">
+                  <div>
+                    <span class="sub_tit">MEDIA</span>
+                    <span class="main_tit">욕실의 변화</span>
+                    <div class="playbx">
+                      <a href=""></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="mag_li01">
+                  <img src="../images/main/6-3.png" class="mag_img" alt="">
+                  <div>
+                    <span class="sub_tit">MEDIA</span>
+                    <span class="main_tit">가장 아름다운 방</span>
+                    <div class="playbx">
+                      <a href=""></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section style="padding: 50px 0" class="section07">
+          <div class="page"></div>
+        </section>
+        <footer id="footer">
+          <div class="f-top">
+            <div class="page">
+              <div class="f-main">
+                <div class="sns">
+                  <ul>
+                    <li>
+                      <a href="https://blog.naver.com/daelim_bath" target="_blank"> 
+                        <div>
+                          <img src="../images/main/sns_blog.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/daelimbath.co" target="_blank">
+                        <div>
+                          <img src="../images/main/sns_f.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/daelimbath/" target="_blank">
+                        <div>
+                          <img src="../images/main/sns_instar.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/user/daelimbnco" target="_blank">
+                        <div>
+                          <img src="../images/main/sns_you.png" alt="">
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="f-info">
+                  <a href="" class="f_logo">
+                    <img src="../images/main/f_logo.png" alt="">
+                  </a>
+                  <div class="menu_li">
+                    <ul>
+                      <li>서울시 영등포구 버드나루로 84 제일빌딩</li>
+                    </ul>
+                    <ul>
+                      <li>대림바스 1588-1952 / 대림 바스&키친 1588-4360 / 대림케어: 1588-3667</li>
+                      <li>상담시간 : AM 09:00 - PM 05:00 (공휴일 휴무)</li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="family">
+                  <div class="family_site">
+                    <span>FAMILY SITE</span>
+                    <div class="family_menu">
+                      <ul>
+                        <li><a href="">DAELIM MALL</a></li>
+                        <li><a href="">DAELIM CARE</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="f-submenu menu_li">
+              <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이메일무단수집거부</a></li>
+              </ul>
+            </div>
+          </div>
+          <span class="f-bt">COPYRIGHT@ 2021 DAELIM B&Co, LIMITED ALL RIGHT RESERVED.</span>
+        </footer>
+      </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

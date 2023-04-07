@@ -33,18 +33,18 @@ if ($(window).width() < 990) {
     centeredSlides: true,
     spaceBetween: 10,
     loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       430: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 2,
+        spaceBetween: 10,
         simulateTouch: true,
       },
       767: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10,
         simulateTouch: true,
       },
@@ -81,6 +81,18 @@ $.each(moveLis, function (index, item) {
     moveDiv.eq(index).addClass("on");
   });
 });
+// section03 mobile
+const tabList = $(".section03 .m_slide li");
+const contList = $(".section03 .m_slide .tab_wrap");
+$.each(tabList, function (index, item) {
+  $(this).click(function () {
+    tabList.removeClass("on");
+    $(this).addClass("on");
+    contList.removeClass("on");
+    contList.eq(index).addClass("on");
+  });
+});
+
 // section04
 window.onload = function () {
   var Controller = new ScrollMagic.Controller();

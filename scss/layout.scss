@@ -276,77 +276,184 @@ header {
     }
   }
 }
-
-footer {
-  #family-site {
-    margin: 100px 0;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      li {
-        width: auto;
-        img {
-          height: 30px;
+#footer {
+  position: relative;
+  color: #fff;
+  font-size: 0;
+  background-color: #111b2a;
+  .f-top {
+    .sns {
+      // width: 30%;
+      ul {
+        display: flex;
+        li {
+          opacity: 0.3;
+          border: solid 1px rgb(247, 247, 247);
+          transition: 0.3s;
+          border-radius: 18px;
+          margin-right: 13px;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 69px;
+            height: 69px;
+            line-height: 69px;
+          }
+          &:hover {
+            opacity: 1;
+            background: #326aff;
+            border: solid 1px #326aff;
+          }
         }
       }
     }
-  }
-  #footer {
-    background-color: #000;
-    color: #fff;
-    padding: 100px 0;
-    .container {
-      display: flex;
-      justify-content: space-between;
-      .info {
-        .util {
-          margin-bottom: 40px;
+    .family {
+      text-align: right;
+      .family_site {
+        background: {
+          image: url("../images/main/down_arr_w.png");
+          repeat: no-repeat;
+          position: 88% center;
+        }
+        position: relative;
+        width: 228px;
+        height: 69px;
+        line-height: 67px;
+        border-radius: 18px;
+        border: solid 1px rgba(247, 247, 247, 0.3);
+        z-index: 3;
+        display: inline-block;
+        text-align: left;
+        transition: 0.5s;
+        span {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 67px;
+          padding: 0 26px;
+          width: 100%;
+          display: block;
+          cursor: pointer;
+          transition: color 0.5s;
+        }
+        .family_menu {
+          position: absolute;
+          // left: 0;
+          right: 0;
+          top: 68px;
+          width: 100%;
+          display: none;
+          z-index: -3;
           ul {
-            display: flex;
+            background: #fff;
+            padding: 15px 26px 20px;
+            border-top: 1px solid rgba(86, 93, 104, 0.2);
+            border-radius: 0 0 18px 18px;
             li {
-              margin-right: 20px;
-            }
-          }
-        }
-        .address {
-          margin-bottom: 40px;
-          ul li {
-            margin: 10px 0;
-          }
-        }
-      }
-      .sns {
-        ul {
-          display: flex;
-          margin-bottom: 20px;
-          li {
-            margin-right: 20px;
-            a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 50px;
-              height: 50px;
-              background-color: #333;
-              border-radius: 100px;
-              transition: all 0.5s ease;
-              &:hover {
-                background-color: $main-color;
+              line-height: 35px;
+              &:hover a {
+                color: #111b2a;
+              }
+              a {
+                font-size: 16px;
+                color: rgba(17, 27, 42, 0.4);
+                letter-spacing: -0.32px;
+                transition: 0.5s;
               }
             }
           }
         }
-        .nts {
-          img {
-            height: 50px;
+        &.on {
+          background: #fff;
+          border-radius: 18px 18px 0 0;
+          border: none;
+          background: {
+            image: url("../images/main/up_arr_b.png");
+            repeat: no-repeat;
+            position: 88% center;
+          }
+          span {
+            color: #111;
           }
         }
       }
     }
   }
+  .f-main {
+    padding: 97px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div {
+      width: 30%;
+    }
+    > div.f-info {
+      width: 40%;
+    }
+
+    .f-info {
+      text-align: center;
+      .f_logo {
+        display: block;
+        margin-bottom: 39px;
+      }
+    }
+    .menu_li {
+      font-size: 0;
+      .menu_info {
+        display: block;
+      }
+      .menu_call {
+        display: inline-block;
+      }
+      ul li {
+        line-height: 1.6;
+        position: relative;
+        display: inline-block;
+        padding: 0 9px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+  .f-submenu {
+    border-top: 1px solid rgba(247, 247, 247, 0.1);
+    height: 55px;
+    text-align: center;
+    ul {
+      font-size: 0;
+      display: flex;
+      justify-content: center;
+      line-height: 55px;
+      font-size: initial;
+      li {
+        padding: 0 19px;
+        line-height: 55px;
+        // font-size: 15px;
+        font-weight: 500;
+        a {
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+  .f-bt {
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    background: #08111f;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.2);
+  }
 }
+
 .dis-no {
-  display: none;
+  display: none !important;
 }
 @media all and (min-width: 1280px) {
   // 1280 이상일때만 적용
@@ -398,28 +505,65 @@ footer {
       }
     }
   }
-  footer {
-    padding: clamp(30px, 100/1400 * 100vw, 100px) 0;
+}
+@media all and (max-width: 1366px) {
+  #footer {
+    .f-main {
+      .sns ul li {
+        margin-right: 8px;
+        a {
+          width: 60px;
+          height: 60px;
+          line-height: 58px;
+        }
+      }
+      .family .family_site {
+        height: 60px;
+        line-height: 58px;
+        span {
+          line-height: 58px;
+        }
+      }
+    }
   }
 }
-
 @media all and (max-width: 1280px) {
   // 여기다가 1280보다 작아졌을때 어떤 css 쓸건지 적용
   header .gnb .center ul li {
     display: none;
   }
 }
-
-@media all and (max-width: 980px) {
+@media all and (max-width: 1000px) {
+  #footer {
+    .f-main {
+      flex-direction: column;
+      align-items: center;
+      > div,
+      > div.f-info {
+        width: auto;
+      }
+      .f-info {
+        margin: 40px 0;
+      }
+      .menu_li ul li {
+        display: block;
+      }
+    }
+    .family_site {
+      // margin: clamp(30px, 100/980 * 100vw, 100px) 0;
+    }
+  }
+}
+@media all and (max-width: 989px) {
   // 여기다가 960px보다 작아졌을때 어떤 css 쓸건지 적용
   header .gnb {
     .right .log_menu li {
       display: none;
     }
   }
-  footer {
-    .family_site {
-      // margin: clamp(30px, 100/980 * 100vw, 100px) 0;
+  #footer {
+    .f-main {
+      padding: 45px 0 40px;
     }
   }
 }
@@ -434,6 +578,91 @@ footer {
       .right .all_menu {
         width: 20px;
       }
+    }
+  }
+  #footer {
+    .f-top {
+      padding-top: 52px;
+      .sns {
+        margin: 70px auto 25px;
+        ul {
+          font-size: 0;
+          display: flex;
+          justify-content: center;
+          li {
+            margin-right: 9px;
+            border-radius: 9px;
+            a {
+              width: 51px;
+              height: 51px;
+              line-height: 49px;
+            }
+          }
+        }
+      }
+      .family {
+        text-align: center;
+        .family_site {
+          margin: 0 auto 35px;
+          width: 327px;
+          height: 52px;
+          line-height: 50px;
+          border-radius: 9px;
+          background-color: rgb(8, 17, 31);
+          border: 0;
+          span {
+            line-height: 50px;
+            font-size: 14px;
+            padding: 0 20px;
+          }
+          &.on {
+            border-radius: 0 0 18px 18px;
+          }
+          .family_menu {
+            top: auto;
+            bottom: 52px;
+            ul {
+              border-radius: 18px 18px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .f-info {
+      .f_logo {
+        display: block;
+        text-align: center;
+      }
+      img {
+        width: 189px;
+      }
+      .m_menu_li {
+        margin-top: 45px;
+        text-align: center;
+        .address {
+          font-size: 14px;
+          color: #fff;
+          opacity: 0.4;
+          line-height: 1.6;
+        }
+      }
+    }
+    .f-submenu {
+      border-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul li {
+        line-height: 1;
+        padding: 0 7px;
+        a {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+    .f-bt {
+      font-size: 12px;
     }
   }
 }

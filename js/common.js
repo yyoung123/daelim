@@ -49,22 +49,6 @@ const gnb = $("#gnb");
 
 //js에서 크기를 제어해야한다.
 
-$(window).on("resize", function () {
-  console.log($(window).width());
-  const w = $(window).outerWidth();
-  console.log(w);
-  if (w > 1280) {
-    $("html").removeClass("m").addClass("pc");
-    $("#gnb .depth02").removeAttr("style");
-    $("#gnb").removeClass("on");
-    const icon = $(".btn-all .material-icons");
-    icon.text("menu");
-    // gnb에 on을 제거하고 btn-all안에 있는 material-icons의 텍스트 menu로 바꾸기...
-  } else {
-    $("html").removeClass("pc").addClass("m");
-  }
-});
-
 const depth01 = $(".gnb .depth01");
 depth01.on("click", function (e) {
   if ($("html").hasClass("m")) {
@@ -80,7 +64,7 @@ depth01.on("click", function (e) {
     }
   }
 });
-$(window).trigger("resize");
+
 $("#footer .family_site").click(function () {
   $("#footer .family_site").toggleClass("on");
   $("#footer .family_menu").stop().slideToggle();

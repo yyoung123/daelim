@@ -13,6 +13,7 @@
 
 body {
   font-family: "Exo 2", "Noto Sans KR", sans-serif;
+  line-height: 1.6;
 }
 
 a,
@@ -240,6 +241,114 @@ header .gnb.ban_fixed {
   left: 0;
   width: 100%;
   border-bottom: 1px solid rgba(13, 13, 13, 0.05);
+}
+header .site-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fdfdfd;
+  display: none;
+  z-index: 999;
+}
+header .site-container .close-btn {
+  position: absolute;
+  right: 72px;
+  top: 36px;
+  cursor: pointer;
+  z-index: 99;
+}
+header .site-inner {
+  max-width: 1652px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 0 15px;
+}
+header .site-inner .txt-ban {
+  position: absolute;
+  bottom: 4px;
+  left: 120px;
+  font-size: 267.5px;
+  letter-spacing: -13.38px;
+  color: rgba(231, 233, 235, 0.2);
+  line-height: 1;
+  bottom: -26px;
+  z-index: -5;
+}
+header .site-cont {
+  display: flex;
+  width: 100%;
+}
+header .site-box {
+  width: 16.6%;
+  padding-top: 100px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(28, 28, 28, 0.06);
+  opacity: 1;
+  transition: opacity 0.4s;
+  overflow: hidden;
+  height: 100vh;
+}
+header .site-box.act .site-area {
+  opacity: 1;
+}
+header .site-box.act .site-area li {
+  padding-left: 14px;
+}
+header .site-box.act .main_tit:before {
+  opacity: 1;
+}
+header .site-box .depth01 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+header .site-box .site-area {
+  opacity: 0.4;
+}
+header .site-box .site-area:hover {
+  opacity: 1;
+}
+header .site-box .site-area li {
+  transition: 0.2s;
+}
+header .site-box .site-area li:hover .main_tit::before {
+  opacity: 1;
+}
+header .site-box .site-area .main_tit {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c1c1c;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+header .site-box .site-area .main_tit a {
+  display: block;
+  font-size: 20px;
+}
+header .site-box .site-area .main_tit:before {
+  background: #326aff;
+  position: absolute;
+  content: "";
+  opacity: 0;
+  transition: 0.2s;
+  top: 4px;
+  left: -24px;
+  height: 24px;
+  width: 5px;
+}
+header .site-box .site-area .sub_tit a {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 15px;
+}
+header .site-box.act .depth01, header .site-box:hover .depth01 {
+  color: #326aff;
 }
 
 #footer {

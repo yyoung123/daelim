@@ -16,6 +16,7 @@
 }
 body {
   font-family: "Exo 2", "Noto Sans KR", sans-serif;
+  line-height: 1.6;
 }
 a,
 a:hover {
@@ -273,6 +274,125 @@ header {
       left: 0;
       width: 100%;
       border-bottom: 1px solid rgba(13, 13, 13, 0.05);
+    }
+  }
+  .site-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // height: calc(100vh - 41px);
+    height: 100vh;
+    width: 100%;
+    background-color: #fdfdfd;
+    display: none;
+    z-index: 999;
+    .close-btn {
+      position: absolute;
+      right: 72px;
+      top: 36px;
+      cursor: pointer;
+      z-index: 99;
+    }
+  }
+  .site-inner {
+    max-width: 1652px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 0 15px;
+    .txt-ban {
+      position: absolute;
+      bottom: 4px;
+      left: 120px;
+      font-size: 267.5px;
+      letter-spacing: -13.38px;
+      color: rgba(231, 233, 235, 0.2);
+      line-height: 1;
+      bottom: -26px;
+      z-index: -5;
+    }
+  }
+  .site-cont {
+    display: flex;
+    width: 100%;
+  }
+  .site-box {
+    width: 16.6%;
+    padding-top: 100px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(28, 28, 28, 0.06);
+    opacity: 1;
+    transition: opacity 0.4s;
+    overflow: hidden;
+    height: 100vh;
+    &.act {
+      .site-area {
+        opacity: 1;
+        li {
+          padding-left: 14px;
+        }
+      }
+      .main_tit {
+        &:before {
+          // background: #f00;
+          opacity: 1;
+        }
+      }
+    }
+    .depth01 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #1c1c1c;
+      font-weight: bold;
+    }
+
+    .site-area {
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+      li {
+        transition: 0.2s;
+        &:hover {
+          .main_tit::before {
+            opacity: 1;
+          }
+        }
+      }
+      .main_tit {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1c1c1c;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        a {
+          display: block;
+          font-size: 20px;
+        }
+        &:before {
+          background: $main-color;
+          position: absolute;
+          content: "";
+          // opacity: 1;
+          opacity: 0;
+          transition: 0.2s;
+          top: 4px;
+          left: -24px;
+          height: 24px;
+          width: 5px;
+        }
+      }
+      .sub_tit a {
+        display: block;
+        margin-bottom: 9px;
+        font-size: 15px;
+      }
+    }
+    &.act .depth01,
+    &:hover .depth01 {
+      color: $main-color;
     }
   }
 }

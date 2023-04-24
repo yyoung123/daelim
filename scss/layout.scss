@@ -324,6 +324,7 @@ header {
     transition: opacity 0.4s;
     overflow: hidden;
     height: 100vh;
+    white-space: normal;
     &.act {
       .site-area {
         opacity: 1;
@@ -333,7 +334,6 @@ header {
       }
       .main_tit {
         &:before {
-          // background: #f00;
           opacity: 1;
         }
       }
@@ -344,7 +344,6 @@ header {
       color: #1c1c1c;
       font-weight: bold;
     }
-
     .site-area {
       opacity: 0.4;
       &:hover {
@@ -353,12 +352,14 @@ header {
       li {
         transition: 0.2s;
         &:hover {
-          .main_tit::before {
+          .main_tit::before,
+          .main_tit2::before {
             opacity: 1;
           }
         }
       }
-      .main_tit {
+      .main_tit,
+      .main_tit2 {
         font-size: 20px;
         font-weight: bold;
         color: #1c1c1c;
@@ -383,6 +384,10 @@ header {
           height: 24px;
           width: 5px;
         }
+      }
+      .main_tit2 {
+        margin-bottom: 8px;
+        margin-top: 0;
       }
       .sub_tit a {
         display: block;
@@ -624,9 +629,48 @@ header {
         }
       }
     }
+    .site-container .close-btn {
+      right: 22px;
+    }
+    .site-box {
+      padding-top: 80px;
+      .depth01 {
+        font-size: 22px;
+      }
+      .site-area {
+        .main_tit,
+        .main_tit2 {
+          font-size: 16px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          a {
+            font-size: 16px;
+          }
+        }
+        .main_tit2 {
+          margin-bottom: 8px;
+          margin-top: 0;
+        }
+        .sub_tit a {
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
 @media all and (max-width: 1366px) {
+  header {
+    .site-inner {
+      .txt-ban {
+        font-size: 190px;
+      }
+    }
+    .site-box {
+      .depth01 {
+        font-size: 17px;
+      }
+    }
+  }
   #footer {
     .f-main {
       .sns ul li {
@@ -688,7 +732,7 @@ header {
   }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 768px) {
   // 여기다가 640px보다 작아졌을때 어떤 css 쓸건지 적용
   header {
     .gnb {

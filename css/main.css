@@ -185,6 +185,7 @@ body {
   position: relative;
   margin-top: 47px;
   text-align: center;
+  overflow: hidden;
 }
 #wrap .contents-wrap .cont-img {
   font-size: 0;
@@ -1350,7 +1351,7 @@ body {
   }
   #wrap #section02 .page.bath-slide {
     padding-left: 0;
-    width: calc(100% + 15px);
+    width: 100%;
   }
   #wrap #section02 .swiper-button-prev {
     width: 20px;
@@ -1602,6 +1603,9 @@ body {
   #wrap #section06 .page {
     padding-left: 0;
     padding-right: 0;
+  }
+  #wrap #section06 .page > div {
+    overflow: hidden;
   }
   #wrap #section06 .slidebx .media_list li {
     padding: 25.8%;

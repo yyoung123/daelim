@@ -289,6 +289,7 @@ header .site-box {
   transition: opacity 0.4s;
   overflow: hidden;
   height: 100vh;
+  white-space: normal;
 }
 header .site-box.act .site-area {
   opacity: 1;
@@ -314,10 +315,12 @@ header .site-box .site-area:hover {
 header .site-box .site-area li {
   transition: 0.2s;
 }
-header .site-box .site-area li:hover .main_tit::before {
+header .site-box .site-area li:hover .main_tit::before,
+header .site-box .site-area li:hover .main_tit2::before {
   opacity: 1;
 }
-header .site-box .site-area .main_tit {
+header .site-box .site-area .main_tit,
+header .site-box .site-area .main_tit2 {
   font-size: 20px;
   font-weight: bold;
   color: #1c1c1c;
@@ -327,11 +330,13 @@ header .site-box .site-area .main_tit {
   display: block;
   cursor: pointer;
 }
-header .site-box .site-area .main_tit a {
+header .site-box .site-area .main_tit a,
+header .site-box .site-area .main_tit2 a {
   display: block;
   font-size: 20px;
 }
-header .site-box .site-area .main_tit:before {
+header .site-box .site-area .main_tit:before,
+header .site-box .site-area .main_tit2:before {
   background: #326aff;
   position: absolute;
   content: "";
@@ -341,6 +346,10 @@ header .site-box .site-area .main_tit:before {
   left: -24px;
   height: 24px;
   width: 5px;
+}
+header .site-box .site-area .main_tit2 {
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 header .site-box .site-area .sub_tit a {
   display: block;
@@ -551,8 +560,40 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
   header .gnb .gnb_inner .right .log_menu li:before {
     right: -1px;
   }
+  header .site-container .close-btn {
+    right: 22px;
+  }
+  header .site-box {
+    padding-top: 80px;
+  }
+  header .site-box .depth01 {
+    font-size: 22px;
+  }
+  header .site-box .site-area .main_tit,
+  header .site-box .site-area .main_tit2 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  header .site-box .site-area .main_tit a,
+  header .site-box .site-area .main_tit2 a {
+    font-size: 16px;
+  }
+  header .site-box .site-area .main_tit2 {
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  header .site-box .site-area .sub_tit a {
+    font-size: 13px;
+  }
 }
 @media all and (max-width: 1366px) {
+  header .site-inner .txt-ban {
+    font-size: 190px;
+  }
+  header .site-box .depth01 {
+    font-size: 17px;
+  }
   #footer .f-main .sns ul li {
     margin-right: 8px;
   }
@@ -598,7 +639,7 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
     padding: 45px 0 40px;
   }
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 768px) {
   header .gnb .left a img {
     width: 80%;
   }

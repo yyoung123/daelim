@@ -5,10 +5,10 @@ const first_swiper = new Swiper(".main-slide", {
   slidesPerView: 1,
   loop: true,
   //자동 스크를링
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   on: {
     slideChange: function (index, item) {
       $(".section01 .slide-nav li").removeClass("on");
@@ -33,10 +33,10 @@ if ($(window).width() < 990) {
     centeredSlides: true,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       430: {
         slidesPerView: 2,
@@ -122,22 +122,22 @@ if ($(window).width() < 990) {
       disableOnInteraction: false,
     },
     breakpoints: {
-      580: {
-        slidesPerView: 1.3,
+      430: {
+        slidesPerView: 1.4,
         centeredSlides: true,
         spaceBetween: 10,
         simulateTouch: true,
       },
-      767: {
+      720: {
         slidesPerView: 2,
-        // spaceBetween: 10,
+        spaceBetween: 10,
         simulateTouch: true,
       },
-      // 900: {
-      //   slidesPerView: 3,
-      //   // spaceBetween: 10,
-      //   simulateTouch: true,
-      // },
+      860: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        simulateTouch: true,
+      },
     },
     pagination: {
       el: ".m_section05 .swiper-pagination",
@@ -182,22 +182,7 @@ else {
   });
 }
 
-// animation.js
-$(window).ready(function () {
-  as();
-  $(window).scroll(function (e) {
-    var s = $(window).scrollTop(); // 현재 window scrollTop
-    if (s > 50) {
-      as();
-    }
-  });
-  function as() {
-    $(".img-ani").each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 800) {
-        $(this).addClass("img-aniload");
-      }
-    });
-  }
+// introduce.html
+$(document).ready(function () {
+  $(".product .section01").addClass("act");
 });

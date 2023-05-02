@@ -15,6 +15,10 @@ body {
   font-family: "Exo 2", "Noto Sans KR", sans-serif;
   line-height: 1.6;
 }
+body.overflow {
+  height: 100vh;
+  overflow: hidden;
+}
 
 a,
 a:hover {
@@ -241,6 +245,155 @@ header .gnb.ban_fixed {
   left: 0;
   width: 100%;
   border-bottom: 1px solid rgba(13, 13, 13, 0.05);
+}
+header .ham-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+header .ham-menu.act {
+  display: block;
+}
+header .ham-menu .ham-back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  opacity: 0.7;
+  background-color: #000;
+  top: 0;
+  left: 0;
+}
+header .ham-menu .m-ham {
+  position: absolute;
+  width: 311px;
+  height: 100vh;
+  background: #fff;
+  right: 0;
+}
+header .ham-menu .close-btn {
+  position: absolute;
+  left: -28px;
+  top: 22px;
+  width: 18px;
+  height: 17px;
+  cursor: pointer;
+  z-index: 99;
+}
+header .ham-menu .h-util {
+  position: relative;
+  height: 105px;
+  background-color: #326aff;
+  padding: 0 27px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header .ham-menu .h-util .tit_txt {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+header .ham-menu .h-util .member-btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+header .ham-menu .h-util .member-btn span {
+  color: #fff;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  font-size: 13px;
+}
+header .ham-menu .h-util .member-btn .eng {
+  margin-left: 10px;
+  border-bottom: 0;
+  font-family: "Noto Sans KR", san-serif;
+}
+header .ham-menu .login-btn {
+  position: absolute;
+  right: 16px;
+  top: 27px;
+  background: #fff;
+  border-radius: 12.5px;
+  height: 25px;
+  line-height: 25px;
+  color: #000;
+  font-size: 10px;
+  padding: 0 9px;
+  font-weight: 500;
+}
+header .ham-menu .h-menuwrap {
+  height: calc(100vh - 105px);
+}
+header .ham-menu .h-menuwrap .h-mainmenu {
+  padding: 36px 27px 54px;
+}
+header .ham-menu .h-menuwrap .h-menulist .depth01 {
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_link,
+header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
+  font-size: 21px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1;
+  display: block;
+}
+header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
+  display: block;
+  background-image: url("../images/layout/ham_arr_dw.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 11px;
+  transition: 0.4s;
+}
+header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit.act {
+  color: #326aff;
+  background-image: url("../images/layout/ham_arr_up.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 11px;
+}
+header .ham-menu .h-menuwrap .h-menulist ul {
+  padding-top: 7px;
+  margin-top: 7px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all cubic-bezier(0.79, 0, 0.83, 0.67);
+}
+header .ham-menu .h-menuwrap .h-menulist .depth02 {
+  padding: 7px 0;
+  line-height: 1;
+}
+header .ham-menu .h-menuwrap .h-menulist .depth02 a {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.75);
+}
+header .ham-menu .h-sns {
+  position: relative;
+  padding: 0 27px 55px;
+}
+header .ham-menu .h-sns ul {
+  display: flex;
+}
+header .ham-menu .h-sns ul li {
+  margin-right: 14px;
+}
+header .ham-menu .h-sns ul li:first-child {
+  margin-right: 0px;
+}
+header .ham-menu .h-sns ul li:nth-child(2) {
+  margin-right: 20px;
+}
+header .ham-menu .h-sns ul li img {
+  width: 50%;
 }
 header .site-container {
   position: fixed;
@@ -726,5 +879,29 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
   }
   #footer .f-bt {
     font-size: 12px;
+  }
+}
+@media all and (max-width: 545px) {
+  header .ham-menu .login-btn {
+    top: 19px;
+  }
+  header .ham-menu .h-util {
+    height: 85px;
+  }
+  header .ham-menu .h-util .tit_txt {
+    font-size: 16px;
+  }
+  header .ham-menu .h-menuwrap {
+    height: calc(100vh - 85px);
+  }
+  header .ham-menu .h-menuwrap .h-mainmenu {
+    padding: 15px 20px 20px;
+  }
+  header .ham-menu .h-menuwrap .h-menulist .depth01 {
+    margin-bottom: 20px;
+  }
+  header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_link,
+  header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
+    font-size: 15px;
   }
 }

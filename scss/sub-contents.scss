@@ -20,17 +20,87 @@
       padding: 22px 0 38px;
     }
   }
+  .section07 {
+    padding-bottom: 279px;
+    text-align: center;
+  }
+  .m_section07 {
+    background: {
+      image: url("../images/brand/about_mo05.png");
+      repeat: no-repeat;
+      position: center;
+      size: 100%;
+    }
+    margin-top: 20px;
+    padding: 85px 0 50px;
+    .txt_wrap {
+      padding-top: 74px;
+      padding-bottom: 119px;
+    }
+    .bath_img {
+      position: relative;
+      .m_bath01 {
+        position: absolute;
+        top: -39px;
+        left: 132px;
+        z-index: 3;
+        width: 107px;
+      }
+      .m_bath02 {
+        width: 173px;
+      }
+      &.bot {
+        text-align: right;
+        padding-right: 44px;
+        .m_bath03 {
+          width: 107px;
+          position: absolute;
+          bottom: 113px;
+          right: 0;
+          z-index: 3;
+        }
+        .m_bath04 {
+          width: 199px;
+        }
+      }
+    }
+    .tit_txt {
+      .d_idx {
+        position: relative;
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+        display: inline-block;
+        padding-left: 168px;
+        &:before {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 128px;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #fff;
+        }
+      }
+    }
+    .txt_main {
+      padding-bottom: 0;
+    }
+  }
 }
 .product {
-  // overflow: hidden;
   .section01 {
     position: relative;
     z-index: 99;
+    overflow: hidden;
     .txt_wrap {
       padding-bottom: 94px;
       text-align: left;
+      transition: all 1.5s cubic-bezier(0, 0.72, 0.44, 0.99);
       .main_txt {
         line-height: 1.3;
+        transition: all 1.5s cubic-bezier(0, 0.72, 0.44, 0.99);
       }
       .sub_txt {
         font-size: 22px;
@@ -57,10 +127,6 @@
         }
       }
     }
-  }
-  .section07 {
-    padding-bottom: 279px;
-    text-align: center;
   }
 }
 .sub_page {
@@ -118,6 +184,9 @@
       image: url("../images/brand/about_bg.png");
       repeat: no-repeat;
       position: center;
+    }
+    .since {
+      color: rgba(0, 0, 0, 0.7);
     }
     .sub_page {
       display: flex;
@@ -181,22 +250,22 @@
           justify-content: center;
           gap: 130px;
           flex-wrap: nowrap;
-          li {
-            position: relative;
-            &:after {
-              position: absolute;
-              content: "";
-              display: block;
-              width: 1px;
-              height: 136px;
-              right: -65px;
-              top: 53px;
-              height: 82%;
-              background-color: rgba(32, 157, 203, 0.2);
-            }
-            &:last-child:after {
-              display: none;
-            }
+        }
+        li {
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 1px;
+            height: 136px;
+            right: -65px;
+            top: 53px;
+            height: 82%;
+            background-color: rgba(32, 157, 203, 0.2);
+          }
+          &:last-child:after {
+            display: none;
           }
         }
         .txt_ch {
@@ -432,5 +501,12 @@
         bottom: 36px;
       }
     }
+  }
+}
+.m_section07 {
+  .inner_page {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }

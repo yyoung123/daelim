@@ -1,6 +1,6 @@
 // section01
 $(".section01 .txt-wrap").addClass("active");
-const first_swiper = new Swiper(".main-slide", {
+var first_slide = new Swiper(".main-slide", {
   direction: "horizontal",
   slidesPerView: 1,
   loop: true,
@@ -19,7 +19,7 @@ const first_swiper = new Swiper(".main-slide", {
 const slideNav = $(".section01 .slide-nav li");
 $.each(slideNav, function (index, item) {
   $(this).click(function () {
-    first_swiper.slideToLoop(index);
+    first_slide.slideToLoop(index);
   });
 });
 //section02 슬라이드

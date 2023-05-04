@@ -319,7 +319,7 @@ body {
   height: 752px;
   text-align: center;
   transition: 0.4s;
-  background-image: url("../images/main/sec02_bg_0.png");
+  background-image: url("./images/main/sec02_bg_0.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -552,14 +552,14 @@ body {
   left: 0;
 }
 #wrap #section03 .m_slide .btn-box .btn-view:hover .btn-title {
-  background-image: url("../images/main/more_plus.png");
+  background-image: url("./images/main/more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   border-radius: 33px;
   color: #fff;
 }
 #wrap #section03 .m_slide .btn-box .btn-view .btn-title {
-  background-image: url("../images/main/more_plus.png");
+  background-image: url("./images/main/more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   background-size: 12px;
@@ -660,7 +660,7 @@ body {
   transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 #wrap #section04 .fix .btn-view .btn-inner .btn-title {
-  background-image: url("../images/main/b_more_plus.png");
+  background-image: url("./images/main/b_more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   color: #326aff;
@@ -675,7 +675,7 @@ body {
   transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 #wrap #section04 .fix .btn-view .btn-inner .btn-title:hover {
-  background-image: url("../images/main/more_plus.png");
+  background-image: url("./images/main/more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   border-radius: 33px;
@@ -947,14 +947,14 @@ body {
   transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 #wrap #section05 .sec_tit .btn-view:hover .btn-title {
-  background-image: url("../images/main/more_plus.png");
+  background-image: url("./images/main/more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   border-radius: 33px;
   color: #fff;
 }
 #wrap #section05 .sec_tit .btn-view .btn-title {
-  background-image: url("../images/main/b_more_plus.png");
+  background-image: url("./images/main/b_more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   color: #326aff;
@@ -1097,7 +1097,7 @@ body {
   left: 0;
 }
 #wrap #section05 .m_section05 .btn-box .btn-title {
-  background-image: url("../images/main/more_plus.png");
+  background-image: url("./images/main/more_plus.png");
   background-repeat: no-repeat;
   background-position: 90%;
   background-size: 12px;

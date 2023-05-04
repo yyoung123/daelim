@@ -474,7 +474,7 @@
         left: 35px;
         transform: translateY(-50%);
         background: {
-          image: url("../images/main/slide_prev_w.png");
+          image: url("./images/main/slide_prev_w.png");
           repeat: no-repeat;
           position: center;
         }
@@ -489,7 +489,7 @@
         right: 15px;
         transform: translateY(-50%);
         background: {
-          image: url("../images/main/slide_next_w.png");
+          image: url("./images/main/slide_next_w.png");
           repeat: no-repeat;
           position: center;
         }
@@ -607,7 +607,7 @@
         background: #326aff;
         .btn-title {
           background: {
-            image: url("../images/main/more_plus.png");
+            image: url("./images/main/more_plus.png");
             repeat: no-repeat;
             position: 88%;
             size: 12px;

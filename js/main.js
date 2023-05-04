@@ -76,7 +76,7 @@ const moveDiv = $(".section03 .smt_box");
 $.each(moveLis, function (index, item) {
   $(this).mouseenter(function () {
     let idx = $(this).index();
-    $(".section03 .contents-wrap").css({ background: "url(../images/main/sec02_bg_" + idx + ".png)", "background-repeat": "no-repeat", "background-position": "center center" });
+    $(".section03 .contents-wrap").css({ background: "url(./images/main/sec02_bg_" + idx + ".png)", "background-repeat": "no-repeat", "background-position": "center center" });
     moveDiv.removeClass("on");
     moveDiv.eq(index).addClass("on");
   });

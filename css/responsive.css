@@ -332,7 +332,7 @@
     top: 50%;
     left: 35px;
     transform: translateY(-50%);
-    background-image: url("../images/main/slide_prev_w.png");
+    background-image: url("./images/main/slide_prev_w.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -345,7 +345,7 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-    background-image: url("../images/main/slide_next_w.png");
+    background-image: url("./images/main/slide_next_w.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -448,7 +448,7 @@
     background: #326aff;
   }
   #wrap #section05 .sec_tit .btn-view .btn-title {
-    background-image: url("../images/main/more_plus.png");
+    background-image: url("./images/main/more_plus.png");
     background-repeat: no-repeat;
     background-position: 88%;
     background-size: 12px;

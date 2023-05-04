@@ -126,7 +126,7 @@ header {
           transition: height 0.5s ease;
           top: 97px;
           overflow: hidden;
-          background: url("../images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
+          background: url("./images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
           width: 100%;
           border-radius: 0 0 20px 20px;
           &.on {
@@ -381,7 +381,7 @@ header {
           .depth01_tit {
             display: block;
             background: {
-              image: url("../images/layout/ham_arr_dw.png");
+              image: url("./images/layout/ham_arr_dw.png");
               repeat: no-repeat;
               position: right;
               size: 11px;
@@ -390,7 +390,7 @@ header {
             &.act {
               color: #326aff;
               background: {
-                image: url("../images/layout/ham_arr_up.png");
+                image: url("./images/layout/ham_arr_up.png");
                 repeat: no-repeat;
                 position: right;
                 size: 11px;
@@ -601,7 +601,7 @@ header {
       text-align: right;
       .family_site {
         background: {
-          image: url("../images/main/down_arr_w.png");
+          image: url("./images/main/down_arr_w.png");
           repeat: no-repeat;
           position: 88% center;
         }
@@ -658,7 +658,7 @@ header {
           border-radius: 18px 18px 0 0;
           border: none;
           background: {
-            image: url("../images/main/up_arr_b.png");
+            image: url("./images/main/up_arr_b.png");
             repeat: no-repeat;
             position: 88% center;
           }

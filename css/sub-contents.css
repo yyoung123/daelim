@@ -26,7 +26,7 @@
   text-align: center;
 }
 .introduce .m_section07 {
-  background-image: url("./images/brand/about_mo05.png");
+  background-image: url("../images/brand/about_mo05.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -178,7 +178,7 @@
 .brand .section02 {
   position: relative;
   height: 750px;
-  background-image: url("./images/brand/about_bg.png");
+  background-image: url("../images/brand/about_bg.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -343,7 +343,7 @@
   transition: 0.8s;
 }
 .brand .section05 {
-  background-image: url("./images/brand/about_bg03.png");
+  background-image: url("../images/brand/about_bg03.png");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,5 +1,4 @@
 @import "vars";
-@import "mixins";
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -57,7 +56,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: clamp(61px, 12vw, 97px);
+      height: 97px;
       position: relative;
       padding: 0 72px 0 67px;
     }
@@ -126,7 +125,7 @@ header {
           transition: height 0.5s ease;
           top: 97px;
           overflow: hidden;
-          background: url("./images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
+          background: url("../images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
           width: 100%;
           border-radius: 0 0 20px 20px;
           &.on {
@@ -381,7 +380,7 @@ header {
           .depth01_tit {
             display: block;
             background: {
-              image: url("./images/layout/ham_arr_dw.png");
+              image: url("../images/layout/ham_arr_dw.png");
               repeat: no-repeat;
               position: right;
               size: 11px;
@@ -390,7 +389,7 @@ header {
             &.act {
               color: #326aff;
               background: {
-                image: url("./images/layout/ham_arr_up.png");
+                image: url("../images/layout/ham_arr_up.png");
                 repeat: no-repeat;
                 position: right;
                 size: 11px;
@@ -601,7 +600,7 @@ header {
       text-align: right;
       .family_site {
         background: {
-          image: url("./images/main/down_arr_w.png");
+          image: url("../images/main/down_arr_w.png");
           repeat: no-repeat;
           position: 88% center;
         }
@@ -658,7 +657,7 @@ header {
           border-radius: 18px 18px 0 0;
           border: none;
           background: {
-            image: url("./images/main/up_arr_b.png");
+            image: url("../images/main/up_arr_b.png");
             repeat: no-repeat;
             position: 88% center;
           }
@@ -898,11 +897,17 @@ header {
   // 여기다가 640px보다 작아졌을때 어떤 css 쓸건지 적용
   header {
     .gnb {
-      .left a img {
-        width: 80%;
-      }
-      .right .all_menu {
-        width: 20px;
+      .gnb_inner {
+        height: 61px;
+        .left a img {
+          width: 80%;
+        }
+        .right {
+          width: 20px;
+          .all_menu {
+            width: 20px;
+          }
+        }
       }
     }
   }

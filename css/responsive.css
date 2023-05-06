@@ -170,7 +170,7 @@
     bottom: 45px;
   }
   #wrap #section01 .slide-nav li {
-    width: 374px;
+    width: 340px;
   }
   #wrap #section01 .slide-nav li .main_tit {
     font-size: clamp(12px, 1.2vw, 16px);
@@ -281,6 +281,7 @@
 @media all and (max-width: 1100px) {
   #wrap #section01 .slide-nav li {
     margin-right: 20px;
+    width: 300px;
   }
   #wrap #section01 .slide-nav li:not(.on) {
     width: 50px;
@@ -305,6 +306,9 @@
   }
 }
 @media all and (max-width: 1024px) {
+  #wrap #section02 {
+    padding: 80px 0 100px;
+  }
   #wrap #section02 .contents-wrap .cont-img > li {
     width: 23.73%;
   }
@@ -322,6 +326,9 @@
   #wrap #section01 .slide-nav li .sub_tit {
     font-size: 12px;
   }
+  #wrap #section02 {
+    padding: 131px 0 74px;
+  }
   #wrap #section02 .page.bath-slide {
     padding-left: 0;
     width: 100%;
@@ -332,7 +339,7 @@
     top: 50%;
     left: 35px;
     transform: translateY(-50%);
-    background-image: url("./images/main/slide_prev_w.png");
+    background-image: url("../images/main/slide_prev_w.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -345,7 +352,7 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-    background-image: url("./images/main/slide_next_w.png");
+    background-image: url("../images/main/slide_next_w.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -448,7 +455,7 @@
     background: #326aff;
   }
   #wrap #section05 .sec_tit .btn-view .btn-title {
-    background-image: url("./images/main/more_plus.png");
+    background-image: url("../images/main/more_plus.png");
     background-repeat: no-repeat;
     background-position: 88%;
     background-size: 12px;
@@ -610,6 +617,7 @@
   }
   #wrap #section01 .slide-nav li {
     margin-right: 10px;
+    width: 205px;
   }
   #wrap #section01 .slide-nav li:not(.on) {
     width: 25px;
@@ -619,6 +627,9 @@
   }
   #wrap #section02 .page {
     padding: 0 15px;
+  }
+  #wrap #section02 .page.bath-slide {
+    padding: 0;
   }
   #wrap .m_section04 .mobg-top {
     max-width: 400px;

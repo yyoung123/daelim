@@ -1,5 +1,4 @@
 @import "vars";
-@import "mixins";
 .header_top {
   border-top: 1px solid rgba(13, 13, 13, 0.05);
 }
@@ -26,7 +25,7 @@
   }
   .m_section07 {
     background: {
-      image: url("./images/brand/about_mo05.png");
+      image: url("../images/brand/about_mo05.png");
       repeat: no-repeat;
       position: center;
       size: 100%;
@@ -181,7 +180,7 @@
     position: relative;
     height: 750px;
     background: {
-      image: url("./images/brand/about_bg.png");
+      image: url("../images/brand/about_bg.png");
       repeat: no-repeat;
       position: center;
     }
@@ -348,7 +347,7 @@
   }
   .section05 {
     background: {
-      image: url("./images/brand/about_bg03.png");
+      image: url("../images/brand/about_bg03.png");
       repeat: no-repeat;
       position: center;
     }

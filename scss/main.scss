@@ -1,7 +1,5 @@
 //디자인 가이드
-
 @import "vars";
-@import "mixins";
 body {
   background-color: #fff;
 }
@@ -328,7 +326,7 @@ body {
       text-align: center;
       transition: 0.4s;
       background: {
-        image: url("./images/main/sec02_bg_0.png");
+        image: url("../images/main/sec02_bg_0.png");
         repeat: no-repeat;
         position: center;
       }
@@ -565,7 +563,7 @@ body {
           }
           &:hover .btn-title {
             background: {
-              image: url("./images/main/more_plus.png");
+              image: url("../images/main/more_plus.png");
               repeat: no-repeat;
               position: 90%;
             }
@@ -574,7 +572,7 @@ body {
           }
           .btn-title {
             background: {
-              image: url("./images/main/more_plus.png");
+              image: url("../images/main/more_plus.png");
               repeat: no-repeat;
               position: 90%;
               size: 12px;
@@ -681,7 +679,7 @@ body {
         .btn-inner {
           .btn-title {
             background: {
-              image: url("./images/main/b_more_plus.png");
+              image: url("../images/main/b_more_plus.png");
               repeat: no-repeat;
               position: 90%;
             }
@@ -697,7 +695,7 @@ body {
             transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
             &:hover {
               background: {
-                image: url("./images/main/more_plus.png");
+                image: url("../images/main/more_plus.png");
                 repeat: no-repeat;
                 position: 90%;
               }
@@ -986,7 +984,7 @@ body {
         }
         &:hover .btn-title {
           background: {
-            image: url("./images/main/more_plus.png");
+            image: url("../images/main/more_plus.png");
             repeat: no-repeat;
             position: 90%;
           }
@@ -995,7 +993,7 @@ body {
         }
         .btn-title {
           background: {
-            image: url("./images/main/b_more_plus.png");
+            image: url("../images/main/b_more_plus.png");
             repeat: no-repeat;
             position: 90%;
           }
@@ -1011,66 +1009,6 @@ body {
           transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         }
       }
-      // .btn-view {
-      //   position: relative;
-      //   display: block;
-      //   height: 65px;
-      //   line-height: 63px;
-      //   border-radius: 33px;
-      //   border: 2px solid $main-color;
-      //   color: #fff;
-      //   overflow: hidden;
-      //   transform: translateZ(0);
-      //   width: 225px;
-      //   text-align: center;
-      //   transition: background 0.3s ease-in-out;
-      //   &:hover .btn-effect {
-      //     transform: scaleX(1);
-      //     transform-origin: left;
-      //     background: #326aff;
-      //     border-radius: 33px;
-      //   }
-      //   .btn-effect {
-      //     position: absolute;
-      //     top: 0;
-      //     left: 0;
-      //     z-index: -3;
-      //     display: block;
-      //     width: 110%;
-      //     height: 100%;
-      //     border-radius: 33px;
-      //     background: #326aff;
-      //     transform: scaleX(0);
-      //     transform-origin: right;
-      //     transition: transform 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-      //   }
-      //   &:hover .btn-title {
-      //     background: {
-      //       image: url("./images/main/more_plus.png");
-      //       repeat: no-repeat;
-      //       position: 90%;
-      //     }
-      //     border-radius: 33px;
-      //     color: #fff;
-      //   }
-      //   .btn-title {
-      //     background: {
-      //       image: url("./images/main/b_more_plus.png");
-      //       repeat: no-repeat;
-      //       position: 90%;
-      //     }
-      //     color: $main-color;
-      //     position: relative;
-      //     width: 100%;
-      //     display: inline-block;
-      //     font-size: 16px;
-      //     z-index: 4;
-      //     padding: 0 24px;
-      //     line-height: 64px;
-      //     text-align: left;
-      //     transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-      //   }
-      // }
     }
     .contents-wrap {
       position: relative;
@@ -1206,7 +1144,7 @@ body {
         }
         .btn-title {
           background: {
-            image: url("./images/main/more_plus.png");
+            image: url("../images/main/more_plus.png");
             repeat: no-repeat;
             position: 90%;
             size: 12px;

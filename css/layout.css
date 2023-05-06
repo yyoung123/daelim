@@ -58,7 +58,7 @@ header .gnb .gnb_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: clamp(61px, 12vw, 97px);
+  height: 97px;
   position: relative;
   padding: 0 72px 0 67px;
 }
@@ -126,7 +126,7 @@ header .gnb .center > ul .submenu_wrap {
   transition: height 0.5s ease;
   top: 97px;
   overflow: hidden;
-  background: url("./images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
+  background: url("../images/layout/submenu_bg.png") #fff no-repeat 99% bottom;
   width: 100%;
   border-radius: 0 0 20px 20px;
 }
@@ -346,7 +346,7 @@ header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
 }
 header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
   display: block;
-  background-image: url("./images/layout/ham_arr_dw.png");
+  background-image: url("../images/layout/ham_arr_dw.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 11px;
@@ -354,7 +354,7 @@ header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit {
 }
 header .ham-menu .h-menuwrap .h-menulist .depth01 .depth01_tit.act {
   color: #326aff;
-  background-image: url("./images/layout/ham_arr_up.png");
+  background-image: url("../images/layout/ham_arr_up.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 11px;
@@ -546,7 +546,7 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
   text-align: right;
 }
 #footer .f-top .family .family_site {
-  background-image: url("./images/main/down_arr_w.png");
+  background-image: url("../images/main/down_arr_w.png");
   background-repeat: no-repeat;
   background-position: 88% center;
   position: relative;
@@ -601,7 +601,7 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
   background: #fff;
   border-radius: 18px 18px 0 0;
   border: none;
-  background-image: url("./images/main/up_arr_b.png");
+  background-image: url("../images/main/up_arr_b.png");
   background-repeat: no-repeat;
   background-position: 88% center;
 }
@@ -793,10 +793,16 @@ header .site-box.act .depth01, header .site-box:hover .depth01 {
   }
 }
 @media all and (max-width: 768px) {
-  header .gnb .left a img {
+  header .gnb .gnb_inner {
+    height: 61px;
+  }
+  header .gnb .gnb_inner .left a img {
     width: 80%;
   }
-  header .gnb .right .all_menu {
+  header .gnb .gnb_inner .right {
+    width: 20px;
+  }
+  header .gnb .gnb_inner .right .all_menu {
     width: 20px;
   }
   #footer .f-top {

@@ -4,10 +4,6 @@ const container = document.querySelector(".map");
 //const container = $(".map")[0]; //지도를 담을 영역의 DOM 레퍼런스
 console.log("🚀 ~ file: location.js ~ line 2 ~ container", container);
 
-// const student01 = { name: "이정재", age: 20, weight: 70 };
-// const student02 = { name: "양효정", age: 23, weight: 70 };
-// const student03 = { name: "이가영", age: 22, weight: 70 };
-
 const students = [
   { name: "이정재", age: 20, weight: 70 },
   { name: "이정재", age: 20, weight: 70 },

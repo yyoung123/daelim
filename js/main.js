@@ -32,25 +32,25 @@ $(document).ready(function () {
   if ($(window).width() < 990) {
     $(".section02 .contents-wrap ul").addClass("swiper-wrapper");
     $(".section02 .contents-wrap ul li").addClass("swiper-slide");
-    $(".section02 .contents-wrap").append('<div class="swiper-button-next bt_next"></div><div class="swiper-button-prev bt_prev"></div>');
+    $(".section02 .contents-wrap").append('<div class="swiper-button-next bt_next"></div>', '<div class="swiper-button-prev bt_prev"></div>');
     var bath_slide = new Swiper(".section02 .contents-wrap", {
       speed: 1000,
       slidesPerView: 3,
       centeredSlides: true,
       spaceBetween: 10,
       loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
-        430: {
+        450: {
           slidesPerView: 1,
-          spaceBetween: 5,
+          spaceBetween: 0,
           simulateTouch: true,
         },
         767: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 10,
           simulateTouch: true,
         },
@@ -128,22 +128,22 @@ $(document).ready(function () {
         disableOnInteraction: false,
       },
       breakpoints: {
-        430: {
+        500: {
           slidesPerView: 1.4,
           centeredSlides: true,
           spaceBetween: 10,
           simulateTouch: true,
         },
-        720: {
+        767: {
           slidesPerView: 2,
           spaceBetween: 10,
           simulateTouch: true,
         },
-        860: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-          simulateTouch: true,
-        },
+        // 860: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 10,
+        //   simulateTouch: true,
+        // },
       },
       pagination: {
         el: ".m_section05 .swiper-pagination",
